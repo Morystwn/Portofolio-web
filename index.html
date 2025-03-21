@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mory Portofolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/studio.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <style>
+    .hero-img dotlottie-player {
+    max-width: 100%;
+    height: auto;
+}
+
+  .typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black; /* Efek kursor */
+    width: 0ch; /* Awalnya nol karakter */
+    animation: typing 4s steps(50, end) forwards, blink 0.7s infinite;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @keyframes typing {
+    from { width: 0ch; }
+    to { width: 34ch; } /* Sesuaikan dengan jumlah karakter teks */
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+
+  .sitename {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 550 !important;
+}
+
+  </style>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">MoryStwn</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Hobi</a></li>
+          <li><a href="#menu">Games</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://www.instagram.com/morystwn?igsh=MXo5YWZlcjNkbjg1">Follow</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-between">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">Hai Guys<br>Welcome to My Portofolio Website</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              <span class="typing">Ini adalah sebuah website portofolio saya</span>
+            </p>            
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#about" class="btn-get-started">Lihat</a>
+              <a href="javascript:void(0);" class="btn-watch-video d-flex align-items-center" onclick="toggleMusic()">
+                <i id="musicIcon" class="fa-solid fa-play-circle music-icon"></i>
+                <span>Listen This</span>
+            </a>
+                <audio id="myAudio">
+                  <source src="audio/lagu.m4a" type="audio/mpeg">
+              </audio>
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+            <dotlottie-player src="https://lottie.host/e8f63f50-46e0-429d-b6e0-38af8c2fdf82/GUYmLltZmR.lottie" background="transparent" speed="1" style="width: 900px;" loop autoplay></dotlottie-player>
+          </div>
+        </div>
+      </div>
+
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me ?<br></h2>
+        <p><span>Pelajari Tentang</span> <span class="description-title">MoryStwn</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/anime.jpeg" class="img-fluid mb-4" alt="">
+            <div class="book-a-table">
+              <h3>Book a Table</h3>
+              <p>+62 5768089233</p>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Halo semuanya udah pada kenal saya belum? Kenalin nama saya Moreno Setiawan, saya biasanya dikenal dan dipanggil dengan Mory, nah penasaran gasih hobi dan prestasi saya apa aja?
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Saya suka dan hobi Public Speaking kaya makanan sehari hari kadang juga MC  </span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Best Participant Latihan Gabungan Public Speaking Provinsi</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Saya juga Anggota Forum Anak Metro walaupun kadang-kadang aktif nya hehe</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Mendapatkan sertifikat Public Speaking Seprovinsi</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Saya juga kadang suka ngoding, bukan sepuh tapi paham aja hehe</span></li>
+              </ul>
+              <p>
+                Dan masih banyak lagi, nah mungkin ada yang bertanya kenapa sih Mory buat website ini? wkwkw jawabannya gabut aja malem malem jadi buat ini deh.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/Cing.jpeg" class="img-fluid" alt="">
+                <a href="https://youtu.be/uKqRAC-JNOM?si=NuxgACHpkCTwLXcS" class="glightbox pulsating-play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Bahasa Pemograman Apa yang Mory Pelajari ?</h3>
+              <p>
+              Aku pemula Puh jangan dihujat cuma paham beberapa bahasa aja bukan jago kalo jago udah jadi dosen haha, ini salah satu web yang udah kubuat pas pkl.
+              </p>
+              <div class="text-center">
+                <a href="https://opendata.metrokota.go.id/" class="more-btn"><span>Gas Lihat</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="fa-brands fa-php"></i>
+                  <h4>Mempelajari PHP</h4>
+                  <p>Yap betul PHP adalah Bahasa Pemograman yang udah umum dan wajib dipelajari untuk progammer backend nah saya baru belajar ini bahasa saat SMK</p>                                    
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="fa-brands fa-laravel"></i>
+                  <h4>Mempelajari Laravel</h4>
+                  <p>Yap kalo udah tau PHP pasti tau Laravel, jadi laravel itu salah satu framework PHP yang modern dan gampang dipahami pemula backend</p>                  
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="fa-brands fa-js"></i>
+                  <h4>Mempelajari JavaScript</h4>
+                  <p>Serius aku baru bangett nyoba javascript karena katanya buat tampilan website jadi dinamis, dan pas kucoba beneran mantap</p>                  
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Hobi & Game ?</h2>
+        <p><span>Check </span> <span class="description-title">Hoby & Game</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Hobi</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Games</h4>
+            </a><!-- End tab nav item -->
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Hobi</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/mayor.png" class="glightbox"><img src="assets/img/menu/mayor.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Public Speaking</h4>
+                <p class="ingredients">
+                 Hobi sekaligus keahlian Mory adalah Public Speaking
+                </p>
+                <p class="price">
+                  1
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/dubbing.png" class="glightbox"><img src="assets/img/menu/dubbing.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Dubbing</h4>
+                <p class="ingredients">
+                  Asli Mory suka banget dubbing lhoo awalnya karena iklan spotify
+                </p>
+                <p class="price">
+                  2
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/code.png" class="glightbox"><img src="assets/img/menu/code.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Coding </h4>
+                <p class="ingredients">
+                  Yap kalo gasuka ngoding gabuat ini website hahaha
+                </p>
+                <p class="price">
+                  3
+                </p>
+              </div><!-- Menu Item -->
+
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Games</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/joystick.png" class="glightbox"><img src="assets/img/menu/joystick.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Mobile Legend</h4>
+                <p class="ingredients">
+                  Asli ini game yang dari dulu gabisa di lepas candunya itu lho
+                </p>
+                <p class="price">
+                  1
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/gamer.png" class="glightbox"><img src="assets/img/menu/gamer.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Genshin Impact</h4>
+                <p class="ingredients">
+                  Asli genhsin impact adalah game yang seruu bener mory udah punya neuvillte dan arlechinno lho wkwk
+                </p>
+                <p class="price">
+                  2
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/card-game.png" class="glightbox"><img src="assets/img/menu/card-game.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Growtopia</h4>
+                <p class="ingredients">
+                  Ini game seru buat porfitan dan nyantai moment 
+                </p>
+                <p class="price">
+                  3
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+ 
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>Indonesia Lampung</p>
+            <p>Rumah Pembuat</p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>085768089233</span><br>
+              <strong>Email:</strong> <span>setiawanreno502@gmail.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://www.instagram.com/morystwn?igsh=MXo5YWZlcjNkbjg1" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/morystwn?igsh=MXo5YWZlcjNkbjg1" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mory</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Mory</a> Distributed by <a href="https://themewagon.com">personal</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+           function toggleMusic() {
+        var audio = document.getElementById("myAudio");
+        var icon = document.getElementById("musicIcon");
+
+        if (audio.paused) {
+            audio.play();
+            icon.classList.remove("fa-play-circle");
+            icon.classList.add("fa-pause-circle");
+        } else {
+            audio.pause();
+            icon.classList.remove("fa-pause-circle");
+            icon.classList.add("fa-play-circle");
+        }
+    }
+    </script>
+
+</body>
+
+</html>
